@@ -3,9 +3,6 @@
 #include <stdio.h>
 #include <ctype.h>
 
-#include "main.h"
-
-
    /**
     * _print - moves a string one place to the left and prints the string
     * @str: string to move
@@ -27,7 +24,6 @@
            _putchar(str[i]);
        i++;
    }
-
 
 
    _putchar('\n');
@@ -63,7 +59,7 @@ char *mul(char n, char *num, int num_index, char *dest, int dest_index)
    {
        add = (dest[k] - '0') + addrem;
        addrem = add / 10;
-  dest[k] = add % 10 + '0';
+       dest[k] = add % 10 + '0';
    }
    if (addrem)
    {
@@ -137,7 +133,7 @@ int main(int argc, char *argv[])
            _putchar(e[ti]);
        exit(98);
    }
- for (l1 = 0; argv[1][l1]; l1++)
+   for (l1 = 0; argv[1][l1]; l1++)
        ;
    for (l2 = 0; argv[2][l2]; l2++)
        ;
